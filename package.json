@@ -1,0 +1,42 @@
+{
+  "name": "hephaistos",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^4.0.0-rc.0",
+    "@blueprintjs/icons": "^4.0.0-rc.0",
+    "@deck.gl/core": "^8.7.3",
+    "@deck.gl/geo-layers": "^8.7.3",
+    "@deck.gl/layers": "^8.7.3",
+    "@deck.gl/react": "^8.7.3",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@loaders.gl/gltf": "^3.1.8",
+    "@loaders.gl/obj": "^3.1.8",
+    "@luma.gl/core": "^8.5.10",
+    "@reduxjs/toolkit": "^1.8.0",
+    "luma.gl": "^7.3.2",
+    "mapbox-gl": "^2.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-map-gl": "^7.0.10",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "three": "^0.139.0"
+  },
+  "devDependencies": {
+    "@danmarshall/deckgl-typings": "^4.9.19",
+    "@types/mapbox-gl": "^2.6.3",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@types/three": "^0.138.0",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
