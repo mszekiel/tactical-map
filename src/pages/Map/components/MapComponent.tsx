@@ -84,9 +84,9 @@ export const MapComponent = ({
         getPosition: (f) => f.coordinates,
         // @ts-ignore
         getColor: (f) => f.color,
-        sizeScale: 20,
+        sizeScale: 100,
         getOrientation: [0, 250, 90],
-        getTranslation: [0, 0, 100],
+        getTranslation: [0, 0, 2500],
         getScale: [1, 1, 1],
       }),
     []
@@ -99,27 +99,18 @@ export const MapComponent = ({
         data: [
           {
             path: [
-              [42.001, 43.003, 1600],
-              [41.999, 43.0035, 1600],
-              [41.993, 43.006, 1700],
-              [41.992, 43.0061, 1700],
-              [41.991, 43.0062, 1700],
-              [41.99, 43.0063, 1700],
+              [41.0, 43.029, 4000],
+              [41.9, 43.029, 4000],
+              [41.999, 43.0035, 4000],
             ],
             color: [0, 140, 255],
           },
         ],
-        widthScale: 20,
+        widthScale: 200,
         capRounded: true,
         opacity: 0.6,
         // @ts-ignore
-        getColor: (f) => {
-          const z = f.path[1];
-          // @ts-ignore
-          const r = z / 1000;
-
-          return [255 * (1 - r * 2), 128 * r, 255 * r, 255 * (1 - r)];
-        },
+        getColor: () => [0, 140, 255],
       }),
     []
   );

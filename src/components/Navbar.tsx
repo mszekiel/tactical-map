@@ -26,10 +26,7 @@ export default function Navbar() {
   return (
     <_Navbar style={{ boxShadow: "0 0 5px black, 0 0 20px black" }}>
       <_Navbar.Group>
-        <Logo onClick={() => navigate("/")}>
-          <img src="/src/favicon.ico" />
-          Hephaistos
-        </Logo>
+        <Logo onClick={() => navigate("/")}>Tactical Map</Logo>
         <_Navbar.Divider />
         <Button
           minimal
